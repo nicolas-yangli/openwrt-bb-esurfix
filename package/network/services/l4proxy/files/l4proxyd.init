@@ -1,0 +1,15 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006-2011 OpenWrt.org
+
+START=50
+
+DEFAULT=/etc/default/l4proxyd
+
+start() {
+	[ -f $DEFAULT ] && . $DEFAULT
+	service_start /usr/bin/l4proxyd $OPTIONS
+}
+
+stop() {
+	service_stop /usr/bin/l4proxyd
+}
