@@ -18,6 +18,7 @@ PKG_SOURCE_URL:=git://github.com/BillLeecn/l4proxy.git
 PKG_SOURCE_VERSION:=bc49f78130c7d537fef719b891ceac8b0a709551
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
+PKG_USE_MIPS16:=0
 PKG_FIXUP:=autoreconf
 
 include $(INCLUDE_DIR)/package.mk
